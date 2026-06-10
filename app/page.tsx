@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-165px)] max-w-[1180px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-175px)] lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:pt-0">
+        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-235px)] max-w-[1180px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-245px)] lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:pt-0">
           <div className="relative z-30 pb-2 sm:pb-6 lg:pb-8">
             <motion.p
               initial={{ opacity: 0, y: 18 }}
@@ -172,7 +172,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               style={{ y: heroTitleY }}
               transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
-              className="relative z-30 text-[13vw] font-black uppercase leading-[0.86] tracking-[-0.055em] text-[#111518] drop-shadow-[0_5px_0_rgba(153,180,170,.58)] sm:text-[3.6rem] sm:tracking-[-0.065em] md:text-[4.25rem] lg:text-[4.9rem] xl:text-[5.25rem]"
+              className="relative z-30 text-[12vw] font-black uppercase leading-[0.86] tracking-[-0.05em] text-[#111518] drop-shadow-[0_5px_0_rgba(153,180,170,.58)] sm:text-[3.25rem] sm:tracking-[-0.06em] md:text-[3.85rem] lg:text-[4.35rem] xl:text-[4.7rem]"
             >
               Fullstack
               <span className="relative z-10 block text-transparent opacity-95 [-webkit-text-stroke:1.6px_rgba(17,21,24,.72)] drop-shadow-[0_5px_0_rgba(207,125,101,.55)]">Developer</span>
@@ -184,7 +184,7 @@ export default function Home() {
               transition={{ duration: 0.75, delay: 0.18 }}
               className="mt-3 flex max-w-xl gap-4 border-l-2 border-[#cf7d65] pl-4 text-left sm:mt-4 sm:gap-5 sm:pl-5"
             >
-              <p className="text-sm font-bold leading-6 text-black/78 sm:text-base sm:leading-7">
+              <p className="text-sm font-bold leading-6 text-black/78 sm:text-[0.95rem] sm:leading-7">
                 Desarrollo aplicaciones escalables, experiencias intuitivas y soluciones con impacto, profundizando en UI/UX, manejo de datos y Machine Learning.
               </p>
             </motion.div>
@@ -204,9 +204,9 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="relative mx-auto grid min-h-[clamp(320px,46svh,430px)] w-full max-w-[460px] items-end justify-items-center overflow-hidden sm:min-h-[460px] sm:max-w-[560px] lg:min-h-[540px] lg:max-w-none lg:overflow-visible xl:min-h-[560px]">
+          <div className="relative mx-auto grid min-h-[clamp(300px,42svh,390px)] w-full max-w-[450px] items-end justify-items-center overflow-hidden sm:min-h-[420px] sm:max-w-[520px] lg:min-h-[470px] lg:max-w-none lg:overflow-visible xl:min-h-[490px]">
             <motion.div
-              className="absolute bottom-[-4rem] left-[calc(50%-170px)] z-10 h-[330px] w-[330px] rounded-full bg-[#99b4aa]/70 shadow-[0_34px_90px_rgba(107,109,67,.18)] sm:bottom-[-2.5rem] sm:left-[calc(50%-225px)] sm:h-[450px] sm:w-[450px] lg:bottom-0 lg:left-auto lg:right-8 lg:h-[480px] lg:w-[480px] xl:right-6 xl:h-[500px] xl:w-[500px]"
+              className="absolute bottom-[-4rem] left-[calc(50%-160px)] z-10 h-[320px] w-[320px] rounded-full bg-[#99b4aa]/70 shadow-[0_34px_90px_rgba(107,109,67,.18)] sm:bottom-[-2.5rem] sm:left-[calc(50%-205px)] sm:h-[410px] sm:w-[410px] lg:bottom-0 lg:left-auto lg:right-8 lg:h-[430px] lg:w-[430px] xl:right-6 xl:h-[455px] xl:w-[455px]"
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             />
@@ -214,7 +214,7 @@ export default function Home() {
               Mariana
             </div>
             <motion.div
-              className="relative z-30 w-[min(86vw,360px)] sm:w-[min(72vw,420px)] lg:absolute lg:bottom-[-1.5rem] lg:left-auto lg:right-[25%] lg:w-[min(34vw,360px)] xl:bottom-[-2rem] xl:right-[27%] xl:w-[min(30vw,380px)]"
+              className="relative z-30 w-[min(84vw,340px)] sm:w-[min(70vw,390px)] lg:absolute lg:bottom-[-0.75rem] lg:left-auto lg:right-[26%] lg:w-[min(31vw,330px)] xl:bottom-[-1rem] xl:right-[28%] xl:w-[min(28vw,350px)]"
               initial={{ opacity: 0, y: 70, scale: 0.96 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               style={{ y: heroPhotoY }}
@@ -225,7 +225,7 @@ export default function Home() {
                 alt="Retrato de Karol Mariana Acuña"
                 fetchPriority="high"
                 decoding="async"
-                className="relative mx-auto block h-auto max-h-[390px] w-full max-w-full object-contain object-bottom saturate-125 contrast-105 sm:max-h-[470px] lg:h-[500px] lg:max-h-none xl:h-[525px]"
+                className="relative mx-auto block h-auto max-h-[370px] w-full max-w-full object-contain object-bottom saturate-125 contrast-105 sm:max-h-[430px] lg:h-[455px] lg:max-h-none xl:h-[475px]"
               />
             </motion.div>
             <motion.div
@@ -249,13 +249,13 @@ export default function Home() {
           </div>
         </div>
 
-        <a href="#sobre-mi" className="relative z-40 mx-auto mb-3 mt-1 flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1f2428] bg-white shadow-[4px_4px_0_#1f2428] sm:mb-4 sm:h-12 sm:w-12">
+        <a href="#sobre-mi" className="relative z-40 mx-auto -mt-3 mb-2 flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#1f2428] bg-white shadow-[4px_4px_0_#1f2428] sm:h-11 sm:w-11">
           <ArrowDown className="h-5 w-5" />
         </a>
         <TechMarquee />
       </section>
 
-      <section id="sobre-mi" className="relative overflow-hidden bg-[#fffaf2] px-5 py-20 pb-32 text-[#1f2428] sm:px-8 lg:pb-24">
+      <section id="sobre-mi" className="relative overflow-hidden bg-[#fffaf2] px-5 py-16 text-[#1f2428] sm:px-8">
         <div className="absolute inset-x-0 top-0 h-4 bg-[linear-gradient(90deg,#99b4aa,#6b6d43,#aba66f,#cf7d65,#e1b8a2)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_8%_20%,rgba(153,180,170,.24),transparent_18rem),radial-gradient(circle_at_82%_18%,rgba(207,125,101,.14),transparent_24rem),linear-gradient(180deg,#fffaf2_0%,#f8efe3_58%,#fffaf2_100%)]" />
         <div className="absolute inset-0 opacity-[0.28] [background-image:linear-gradient(90deg,rgba(31,36,40,.075)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.065)_1px,transparent_1px)] [background-size:64px_64px]" />
@@ -281,14 +281,14 @@ export default function Home() {
           aria-hidden="true"
           width={1092}
           height={1092}
-          sizes="208px"
+          sizes="(min-width: 1280px) 270px, (min-width: 1024px) 240px, 160px"
           loading="lazy"
-          className="pointer-events-none absolute bottom-0 right-[-2rem] z-0 h-auto w-36 select-none opacity-25 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-40 lg:hidden"
+          className="pointer-events-none absolute bottom-0 right-[-1.5rem] z-20 h-auto w-40 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-48 lg:right-[-3.5rem] lg:block lg:w-[min(20vw,240px)] xl:right-[-2rem] xl:w-[min(18vw,270px)]"
         />
         <div className="pointer-events-none absolute bottom-0 right-0 z-10 hidden h-40 w-[38rem] rounded-tl-full bg-[#99b4aa]/35 lg:block" />
-        <div className="relative z-10 mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
+        <div className="relative z-10 mx-auto grid max-w-[1180px] gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <Reveal>
-            <div className="relative mx-auto max-w-[460px]">
+            <div className="relative mx-auto max-w-[420px]">
               <div className="absolute -left-4 -top-4 z-10 rounded-md bg-[#cf7d65] px-4 py-2 text-xl font-black uppercase text-white shadow-[5px_5px_0_#1f2428]">Hello.</div>
               <div className="rounded-xl border-2 border-[#1f2428] bg-[#f2dec7] p-3 shadow-[10px_10px_0_#1f2428]">
                 <Image
@@ -296,7 +296,7 @@ export default function Home() {
                   alt="Ilustración de Mariana trabajando"
                   width={1536}
                   height={2048}
-                  sizes="(min-width: 1024px) 460px, 100vw"
+                  sizes="(min-width: 1024px) 420px, 100vw"
                   loading="lazy"
                   className="aspect-[4/5] w-full rounded-lg object-cover saturate-110"
                 />
@@ -307,24 +307,24 @@ export default function Home() {
             <p className="mb-5 inline-block rounded-full border-2 border-[#1f2428] bg-[#f2dec7] px-4 py-2 text-sm font-black uppercase text-[#1f2428] shadow-[4px_4px_0_#1f2428]">
               Tunja / remoto
             </p>
-            <h2 className="max-w-4xl text-4xl font-black leading-[0.94] tracking-[-0.055em] text-[#1f2428] sm:text-5xl lg:text-6xl">
+            <h2 className="max-w-3xl text-3xl font-black leading-[0.96] tracking-[-0.045em] text-[#1f2428] sm:text-4xl lg:text-5xl">
               Desarrollo de software con una mirada limpia, práctica y visual.
             </h2>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#1f2428]/72">
+            <p className="mt-5 max-w-3xl text-base leading-7 text-[#1f2428]/72">
               Me gusta crear interfaces claras, conectar servicios, ordenar información y convertir ideas en productos digitales útiles. Este portafolio evita publicar proyectos incompletos y se centra en mi perfil, mi stack y mi forma de trabajar.
             </p>
-            <div className="relative z-10 mt-8 grid max-w-3xl gap-4 pr-0 sm:grid-cols-3 xl:max-w-[760px] xl:pr-0">
+            <div className="relative z-30 mt-7 grid max-w-[690px] gap-4 pr-0 sm:grid-cols-3 xl:pr-20">
               {profileCards.map(([title, copy, color], i) => (
                 <motion.article
                   key={title}
                   whileHover={{ y: -8, rotate: i - 1 }}
-                  className="min-h-[238px] rounded-lg border border-[#1f2428] bg-[#fffaf2] p-5 text-[#151515] shadow-[6px_6px_0_#1f2428]"
+                  className="min-h-[210px] rounded-lg border border-[#1f2428] bg-[#fffaf2] p-4 text-[#151515] shadow-[6px_6px_0_#1f2428]"
                 >
-                  <span className="grid h-12 w-12 place-items-center rounded-md border border-[#151515]/25 shadow-sm" style={{ backgroundColor: color }}>
-                    <Sparkles className="h-6 w-6" />
+                  <span className="grid h-10 w-10 place-items-center rounded-md border border-[#151515]/25 shadow-sm" style={{ backgroundColor: color }}>
+                    <Sparkles className="h-5 w-5" />
 
                   </span>
-                  <h3 className="mt-5 text-xl font-black leading-tight tracking-[-0.04em]">{title}</h3>
+                  <h3 className="mt-4 text-lg font-black leading-tight tracking-[-0.04em]">{title}</h3>
                   <p className="mt-3 max-w-[13rem] text-sm leading-6 text-black/68">{copy}</p>
                 </motion.article>
               ))}
