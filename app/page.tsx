@@ -87,9 +87,9 @@ export default function Home() {
   const pageBg = useTransform(scrollYProgress, [0, 0.28, 0.56, 0.82, 1], ["#fffaf2", "#99b4aa", "#e1b8a2", "#aba66f", "#6b6d43"]);
   const blobY = useTransform(scrollYProgress, [0, 1], [0, -260]);
   const blobRotate = useTransform(scrollYProgress, [0, 1], [0, 80]);
-  const heroTitleY = useTransform(scrollYProgress, [0, 0.18], [0, -80]);
-  const heroPhotoY = useTransform(scrollYProgress, [0, 0.18], [0, 58]);
-  const heroCodeY = useTransform(scrollYProgress, [0, 0.18], [0, -42]);
+  const heroTitleY = useTransform(scrollYProgress, [0, 0.18], [0, -32]);
+  const heroPhotoY = useTransform(scrollYProgress, [0, 0.18], [0, 12]);
+  const heroCodeY = useTransform(scrollYProgress, [0, 0.18], [0, -18]);
 
   return (
     <motion.main className="min-h-screen overflow-hidden text-[#1f2428]" style={{ backgroundColor: pageBg }}>
@@ -246,15 +246,6 @@ export default function Home() {
               <p className="pl-5">goal: <span className="text-[#6b6d43]">{"'create impact'"}</span></p>
               <p>{"}"}</p>
             </motion.div>
-            <div className="absolute bottom-8 right-0 z-20 hidden max-w-48 items-start gap-2 text-left opacity-75 md:flex xl:right-6">
-              <MapPin className="mt-1 h-6 w-6" />
-              <p className="text-xs font-black uppercase leading-5 tracking-[0.1em]">
-                Colombia
-                <br />
-                Disponible
-                <span className="mt-2 block h-0.5 w-12 bg-[#cf7d65]" />
-              </p>
-            </div>
           </div>
         </div>
 
@@ -290,9 +281,9 @@ export default function Home() {
           aria-hidden="true"
           width={1092}
           height={1092}
-          sizes="(min-width: 1280px) 360px, (min-width: 1024px) 320px, 208px"
+          sizes="208px"
           loading="lazy"
-          className="pointer-events-none absolute bottom-0 right-[-1rem] z-0 h-auto w-40 select-none opacity-55 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-48 lg:right-[-4rem] lg:w-[min(20vw,240px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.24)] xl:right-[-2rem] xl:w-[min(18vw,270px)]"
+          className="pointer-events-none absolute bottom-0 right-[-2rem] z-0 h-auto w-36 select-none opacity-25 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-40 lg:hidden"
         />
         <div className="pointer-events-none absolute bottom-0 right-0 z-10 hidden h-40 w-[38rem] rounded-tl-full bg-[#99b4aa]/35 lg:block" />
         <div className="relative z-10 mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
