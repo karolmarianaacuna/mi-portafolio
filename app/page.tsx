@@ -255,7 +255,7 @@ export default function Home() {
         <TechMarquee />
       </section>
 
-      <section id="sobre-mi" className="relative overflow-hidden bg-[#fffaf2] px-5 py-16 text-[#1f2428] sm:px-8">
+      <section id="sobre-mi" className="relative overflow-hidden bg-[#fffaf2] px-5 pb-44 pt-16 text-[#1f2428] sm:px-8 sm:pb-48 lg:py-16">
         <div className="absolute inset-x-0 top-0 h-4 bg-[linear-gradient(90deg,#99b4aa,#6b6d43,#aba66f,#cf7d65,#e1b8a2)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_8%_20%,rgba(153,180,170,.24),transparent_18rem),radial-gradient(circle_at_82%_18%,rgba(207,125,101,.14),transparent_24rem),linear-gradient(180deg,#fffaf2_0%,#f8efe3_58%,#fffaf2_100%)]" />
         <div className="absolute inset-0 opacity-[0.28] [background-image:linear-gradient(90deg,rgba(31,36,40,.075)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.065)_1px,transparent_1px)] [background-size:64px_64px]" />
@@ -283,7 +283,7 @@ export default function Home() {
           height={1092}
           sizes="(min-width: 1280px) 270px, (min-width: 1024px) 240px, 160px"
           loading="lazy"
-          className="pointer-events-none absolute bottom-6 right-[-1rem] z-40 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:bottom-4 sm:w-52 lg:bottom-0 lg:right-[-1.25rem] lg:block lg:w-[clamp(250px,22vw,360px)] xl:right-0"
+          className="pointer-events-none absolute bottom-5 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-44 lg:bottom-0 lg:right-[-1.25rem] lg:block lg:w-[clamp(250px,22vw,360px)] xl:right-0"
         />
         <div className="pointer-events-none absolute bottom-0 right-0 z-10 hidden h-40 w-[38rem] rounded-tl-full bg-[#99b4aa]/35 lg:block" />
         <div className="relative z-10 mx-auto grid max-w-[1180px] gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
@@ -333,7 +333,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="stack" className="relative overflow-hidden bg-[#99b4aa] px-5 py-20 sm:px-8">
+      <section id="stack" className="relative overflow-hidden bg-[#99b4aa] px-5 pb-48 pt-20 sm:px-8 sm:pb-52 lg:py-20">
         <motion.div className="absolute -left-24 top-16 h-56 w-56 rounded-full bg-[#f2dec7]/45" animate={{ y: [0, 28, 0], scale: [1, 1.08, 1] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} />
         <motion.div className="absolute right-[-3rem] bottom-10 h-48 w-48 rounded-full bg-[#cf7d65]/35" animate={{ y: [0, -28, 0], rotate: [0, 24, 0] }} transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }} />
         <div className="pointer-events-none absolute bottom-0 right-[-2rem] z-0 hidden h-40 w-[28rem] rounded-tl-full bg-[#aba66f]/35 lg:block" />
@@ -341,7 +341,7 @@ export default function Home() {
           src="/stack-peek.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-6 right-1 z-40 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:bottom-4 sm:w-52 lg:bottom-0 lg:right-[-1.5rem] lg:w-[clamp(250px,22vw,360px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-0"
+          className="pointer-events-none absolute bottom-5 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:bottom-0 lg:right-[-1.5rem] lg:w-[clamp(250px,22vw,360px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-0"
         />
         <div className="relative z-30 mx-auto max-w-[1180px] lg:pr-[13rem] xl:pr-[15rem]">
           <Reveal className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
@@ -363,7 +363,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="proyectos" className="relative overflow-hidden bg-[#f2dec7] px-5 py-24 sm:px-8">
+      <section id="proyectos" className="relative overflow-hidden bg-[#f2dec7] px-5 pb-52 pt-24 sm:px-8 sm:pb-56 lg:py-24">
         <div className="absolute left-0 top-0 h-full w-7 bg-[linear-gradient(#99b4aa,#6b6d43,#aba66f,#cf7d65,#e1b8a2)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_32%,rgba(153,180,170,.22),transparent_18rem),radial-gradient(circle_at_86%_8%,rgba(171,166,111,.2),transparent_24rem),radial-gradient(circle_at_78%_82%,rgba(207,125,101,.16),transparent_22rem),linear-gradient(180deg,rgba(255,250,242,.35),rgba(242,222,199,.12))]" />
         <div className="absolute inset-0 opacity-[0.2] [background-image:linear-gradient(90deg,rgba(31,36,40,.075)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.065)_1px,transparent_1px)] [background-size:64px_64px]" />
@@ -388,7 +388,7 @@ export default function Home() {
           src="/projects-left-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-6 right-1 z-40 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:bottom-4 sm:w-52 lg:bottom-0 lg:left-[-1rem] lg:right-auto lg:w-[clamp(260px,22vw,380px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-2"
+          className="pointer-events-none absolute bottom-5 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:bottom-0 lg:left-[-1rem] lg:right-auto lg:w-[clamp(260px,22vw,380px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-2"
         />
         <div className="relative z-30 mx-auto max-w-[1180px] lg:pl-[13rem] xl:pl-[15rem]">
           <SectionTitle kicker="Proyectos destacados" title="Proyectos universitarios realizados." copy="Algunos trabajos académicos desarrollados durante mi formación, presentados en video para mostrar su funcionamiento, interfaz y proceso." icon={Sparkles} />
@@ -427,13 +427,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="experiencia" className="relative overflow-hidden bg-[#e1b8a2] px-5 py-20 sm:px-8">
+      <section id="experiencia" className="relative overflow-hidden bg-[#e1b8a2] px-5 pb-52 pt-20 sm:px-8 sm:pb-56 lg:py-20">
         <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_1px_1px,rgba(31,36,40,.22)_1px,transparent_0)] [background-size:28px_28px]" />
         <img
           src="/experience-areas-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-6 right-1 z-40 h-auto w-48 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:bottom-4 sm:w-56 lg:bottom-0 lg:right-[-1.5rem] lg:w-[clamp(280px,23vw,400px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-0"
+          className="pointer-events-none absolute bottom-5 right-2 z-20 h-auto w-40 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:bottom-0 lg:right-[-1.5rem] lg:w-[clamp(280px,23vw,400px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-0"
         />
         <div className="relative z-30 mx-auto max-w-[1180px] lg:pr-[13rem] xl:pr-[15rem]">
           <SectionTitle kicker="Experiencia" title="Áreas donde ya puedo aportar." copy="Perfil junior full stack con práctica en interfaces, APIs, datos y colaboración ágil." icon={BriefcaseBusiness} />
@@ -443,13 +443,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="educacion" className="relative overflow-hidden bg-[#aba66f] px-5 py-20 text-[#1f2428] sm:px-8">
+      <section id="educacion" className="relative overflow-hidden bg-[#aba66f] px-5 pb-48 pt-20 text-[#1f2428] sm:px-8 sm:pb-52 lg:py-20">
         <motion.div className="absolute right-[-4rem] top-16 h-64 w-64 rounded-full border-[28px] border-[#6b6d43]/35" animate={{ rotate: [0, 360] }} transition={{ duration: 22, repeat: Infinity, ease: "linear" }} />
         <img
           src="/education-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-6 right-1 z-40 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:bottom-4 sm:w-52 lg:bottom-0 lg:left-[-1rem] lg:right-auto lg:w-[clamp(260px,22vw,380px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-2"
+          className="pointer-events-none absolute bottom-5 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:bottom-0 lg:left-[-1rem] lg:right-auto lg:w-[clamp(260px,22vw,380px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-2"
         />
         <div className="relative z-30 mx-auto max-w-[1180px] lg:pl-[13rem] xl:pl-[15rem]">
           <SectionTitle kicker="Educación" title="Base académica y aprendizaje constante." copy="Formación universitaria en curso, fortalecida con rutas técnicas y proyectos web." icon={BookOpen} />
@@ -459,7 +459,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="certificaciones" className="relative overflow-hidden bg-[#99b4aa] px-5 py-20 sm:px-8">
+      <section id="certificaciones" className="relative overflow-hidden bg-[#99b4aa] px-5 pb-52 pt-20 sm:px-8 sm:pb-56 lg:py-20">
         <div className="absolute inset-x-0 top-0 h-6 bg-[linear-gradient(90deg,#1f2428_0_20%,#cf7d65_20%_40%,#e1b8a2_40%_60%,#aba66f_60%_80%,#99b4aa_80%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_24%,rgba(242,222,199,.44),transparent_20rem),radial-gradient(circle_at_86%_18%,rgba(207,125,101,.18),transparent_22rem),radial-gradient(circle_at_74%_84%,rgba(171,166,111,.26),transparent_24rem)]" />
         <div className="absolute inset-0 opacity-[0.18] [background-image:linear-gradient(90deg,rgba(31,36,40,.09)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.08)_1px,transparent_1px)] [background-size:58px_58px]" />
@@ -467,7 +467,7 @@ export default function Home() {
           src="/certifications-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-6 right-1 z-40 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:bottom-4 sm:w-52 lg:bottom-0 lg:right-[-1rem] lg:w-[clamp(250px,21vw,340px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-2"
+          className="pointer-events-none absolute bottom-5 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:bottom-0 lg:right-[-1rem] lg:w-[clamp(250px,21vw,340px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-2"
         />
         <div className="relative z-30 mx-auto max-w-[1180px] lg:pr-[12rem] xl:pr-[14rem]">
           <SectionTitle kicker="Certificaciones" title="Formación complementaria verificada desde tu hoja de vida." copy="Certificados y rutas técnicas alineadas con desarrollo web, bases de datos, APIs y producto digital." icon={Award} />
