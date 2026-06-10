@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-110px)] max-w-[1180px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-145px)] lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:pt-0">
+        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-165px)] max-w-[1180px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-175px)] lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:pt-0">
           <div className="relative z-30 pb-2 sm:pb-6 lg:pb-8">
             <motion.p
               initial={{ opacity: 0, y: 18 }}
@@ -204,9 +204,9 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="relative mx-auto grid min-h-[clamp(340px,48svh,450px)] w-full max-w-[460px] items-end justify-items-center overflow-hidden sm:min-h-[500px] sm:max-w-[590px] lg:min-h-[620px] lg:max-w-none lg:overflow-visible xl:min-h-[660px]">
+          <div className="relative mx-auto grid min-h-[clamp(320px,46svh,430px)] w-full max-w-[460px] items-end justify-items-center overflow-hidden sm:min-h-[460px] sm:max-w-[560px] lg:min-h-[540px] lg:max-w-none lg:overflow-visible xl:min-h-[560px]">
             <motion.div
-              className="absolute bottom-[-5rem] left-[calc(50%-170px)] z-10 h-[340px] w-[340px] rounded-full bg-[#99b4aa]/70 shadow-[0_34px_90px_rgba(107,109,67,.18)] sm:bottom-[-3rem] sm:left-[calc(50%-235px)] sm:h-[470px] sm:w-[470px] lg:bottom-2 lg:left-auto lg:right-8 lg:h-[520px] lg:w-[520px] xl:right-6 xl:h-[560px] xl:w-[560px]"
+              className="absolute bottom-[-4rem] left-[calc(50%-170px)] z-10 h-[330px] w-[330px] rounded-full bg-[#99b4aa]/70 shadow-[0_34px_90px_rgba(107,109,67,.18)] sm:bottom-[-2.5rem] sm:left-[calc(50%-225px)] sm:h-[450px] sm:w-[450px] lg:bottom-0 lg:left-auto lg:right-8 lg:h-[480px] lg:w-[480px] xl:right-6 xl:h-[500px] xl:w-[500px]"
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             />
@@ -214,7 +214,7 @@ export default function Home() {
               Mariana
             </div>
             <motion.div
-              className="relative z-30 w-[min(86vw,370px)] sm:w-[min(72vw,450px)] lg:absolute lg:bottom-[-4.5rem] lg:left-auto lg:right-[25%] lg:w-[min(38vw,395px)] xl:bottom-[-5rem] xl:right-[27%] xl:w-[min(32vw,410px)]"
+              className="relative z-30 w-[min(86vw,360px)] sm:w-[min(72vw,420px)] lg:absolute lg:bottom-[-1.5rem] lg:left-auto lg:right-[25%] lg:w-[min(34vw,360px)] xl:bottom-[-2rem] xl:right-[27%] xl:w-[min(30vw,380px)]"
               initial={{ opacity: 0, y: 70, scale: 0.96 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               style={{ y: heroPhotoY }}
@@ -225,7 +225,7 @@ export default function Home() {
                 alt="Retrato de Karol Mariana Acuña"
                 fetchPriority="high"
                 decoding="async"
-                className="relative mx-auto block h-auto max-h-[400px] w-full max-w-full object-contain object-bottom saturate-125 contrast-105 sm:max-h-[500px] lg:h-[540px] lg:max-h-none xl:h-[590px]"
+                className="relative mx-auto block h-auto max-h-[390px] w-full max-w-full object-contain object-bottom saturate-125 contrast-105 sm:max-h-[470px] lg:h-[500px] lg:max-h-none xl:h-[525px]"
               />
             </motion.div>
             <motion.div
@@ -246,19 +246,19 @@ export default function Home() {
               <p className="pl-5">goal: <span className="text-[#6b6d43]">{"'create impact'"}</span></p>
               <p>{"}"}</p>
             </motion.div>
-            <div className="absolute bottom-14 right-0 z-40 hidden max-w-56 items-start gap-3 text-left md:flex xl:right-10">
+            <div className="absolute bottom-8 right-0 z-20 hidden max-w-48 items-start gap-2 text-left opacity-75 md:flex xl:right-6">
               <MapPin className="mt-1 h-6 w-6" />
-              <p className="text-sm font-black uppercase leading-6 tracking-[0.12em]">
+              <p className="text-xs font-black uppercase leading-5 tracking-[0.1em]">
                 Colombia
                 <br />
-                Disponible para nuevos proyectos
+                Disponible
                 <span className="mt-2 block h-0.5 w-12 bg-[#cf7d65]" />
               </p>
             </div>
           </div>
         </div>
 
-        <a href="#sobre-mi" className="relative z-40 mx-auto mb-3 -mt-8 flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1f2428] bg-white shadow-[4px_4px_0_#1f2428] sm:mb-4 sm:-mt-14 sm:h-12 sm:w-12">
+        <a href="#sobre-mi" className="relative z-40 mx-auto mb-3 mt-1 flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1f2428] bg-white shadow-[4px_4px_0_#1f2428] sm:mb-4 sm:h-12 sm:w-12">
           <ArrowDown className="h-5 w-5" />
         </a>
         <TechMarquee />
@@ -292,7 +292,7 @@ export default function Home() {
           height={1092}
           sizes="(min-width: 1280px) 360px, (min-width: 1024px) 320px, 208px"
           loading="lazy"
-          className="pointer-events-none absolute bottom-0 right-[-0.75rem] z-0 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-52 lg:right-[-2.5rem] lg:w-[min(26vw,320px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.24)] xl:right-[-1rem] xl:w-[min(25vw,360px)]"
+          className="pointer-events-none absolute bottom-0 right-[-1rem] z-0 h-auto w-40 select-none opacity-55 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-48 lg:right-[-4rem] lg:w-[min(20vw,240px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.24)] xl:right-[-2rem] xl:w-[min(18vw,270px)]"
         />
         <div className="pointer-events-none absolute bottom-0 right-0 z-10 hidden h-40 w-[38rem] rounded-tl-full bg-[#99b4aa]/35 lg:block" />
         <div className="relative z-10 mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
@@ -322,7 +322,7 @@ export default function Home() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#1f2428]/72">
               Me gusta crear interfaces claras, conectar servicios, ordenar información y convertir ideas en productos digitales útiles. Este portafolio evita publicar proyectos incompletos y se centra en mi perfil, mi stack y mi forma de trabajar.
             </p>
-            <div className="mt-8 grid max-w-3xl gap-4 pr-0 sm:grid-cols-3 xl:max-w-[760px] xl:pr-0">
+            <div className="relative z-10 mt-8 grid max-w-3xl gap-4 pr-0 sm:grid-cols-3 xl:max-w-[760px] xl:pr-0">
               {profileCards.map(([title, copy, color], i) => (
                 <motion.article
                   key={title}
@@ -342,7 +342,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="stack" className="relative overflow-hidden bg-[#99b4aa] px-5 pb-40 pt-20 sm:px-8 lg:py-20">
+      <section id="stack" className="relative overflow-hidden bg-[#99b4aa] px-5 py-20 sm:px-8">
         <motion.div className="absolute -left-24 top-16 h-56 w-56 rounded-full bg-[#f2dec7]/45" animate={{ y: [0, 28, 0], scale: [1, 1.08, 1] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} />
         <motion.div className="absolute right-[-3rem] bottom-10 h-48 w-48 rounded-full bg-[#cf7d65]/35" animate={{ y: [0, -28, 0], rotate: [0, 24, 0] }} transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }} />
         <div className="pointer-events-none absolute bottom-0 right-[-2rem] z-0 hidden h-40 w-[28rem] rounded-tl-full bg-[#aba66f]/35 lg:block" />
@@ -350,7 +350,7 @@ export default function Home() {
           src="/stack-peek.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-44 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-52 lg:right-[-4rem] lg:w-[min(26vw,320px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-[-2rem] xl:w-[min(24vw,340px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-40 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:right-[-5rem] lg:w-[min(20vw,240px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-[-3rem] xl:w-[min(18vw,260px)]"
         />
         <div className="relative mx-auto max-w-[1180px]">
           <Reveal className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
@@ -372,7 +372,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="proyectos" className="relative overflow-hidden bg-[#f2dec7] px-5 pb-44 pt-24 sm:px-8 lg:py-24">
+      <section id="proyectos" className="relative overflow-hidden bg-[#f2dec7] px-5 py-24 sm:px-8">
         <div className="absolute left-0 top-0 h-full w-7 bg-[linear-gradient(#99b4aa,#6b6d43,#aba66f,#cf7d65,#e1b8a2)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_32%,rgba(153,180,170,.22),transparent_18rem),radial-gradient(circle_at_86%_8%,rgba(171,166,111,.2),transparent_24rem),radial-gradient(circle_at_78%_82%,rgba(207,125,101,.16),transparent_22rem),linear-gradient(180deg,rgba(255,250,242,.35),rgba(242,222,199,.12))]" />
         <div className="absolute inset-0 opacity-[0.2] [background-image:linear-gradient(90deg,rgba(31,36,40,.075)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.065)_1px,transparent_1px)] [background-size:64px_64px]" />
@@ -397,7 +397,7 @@ export default function Home() {
           src="/projects-left-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-40 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:left-[-4rem] lg:right-auto lg:w-[min(24vw,280px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-2rem] xl:w-[min(22vw,300px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-36 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:left-[-5rem] lg:right-auto lg:w-[min(18vw,220px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-3rem] xl:w-[min(16vw,240px)]"
         />
         <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Proyectos destacados" title="Proyectos universitarios realizados." copy="Algunos trabajos académicos desarrollados durante mi formación, presentados en video para mostrar su funcionamiento, interfaz y proceso." icon={Sparkles} />
@@ -436,13 +436,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="experiencia" className="relative overflow-hidden bg-[#e1b8a2] px-5 pb-40 pt-20 sm:px-8 lg:py-20">
+      <section id="experiencia" className="relative overflow-hidden bg-[#e1b8a2] px-5 py-20 sm:px-8">
         <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_1px_1px,rgba(31,36,40,.22)_1px,transparent_0)] [background-size:28px_28px]" />
         <img
           src="/experience-areas-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-1 z-[1] h-auto w-48 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-56 lg:right-[-4rem] lg:w-[min(25vw,320px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-[-2rem] xl:w-[min(24vw,340px)]"
+          className="pointer-events-none absolute bottom-0 right-1 z-0 h-auto w-44 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-52 lg:right-[-5rem] lg:w-[min(20vw,240px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-[-3rem] xl:w-[min(18vw,260px)]"
         />
         <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Experiencia" title="Áreas donde ya puedo aportar." copy="Perfil junior full stack con práctica en interfaces, APIs, datos y colaboración ágil." icon={BriefcaseBusiness} />
@@ -452,13 +452,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="educacion" className="relative overflow-hidden bg-[#aba66f] px-5 pb-40 pt-20 text-[#1f2428] sm:px-8 lg:py-20">
+      <section id="educacion" className="relative overflow-hidden bg-[#aba66f] px-5 py-20 text-[#1f2428] sm:px-8">
         <motion.div className="absolute right-[-4rem] top-16 h-64 w-64 rounded-full border-[28px] border-[#6b6d43]/35" animate={{ rotate: [0, 360] }} transition={{ duration: 22, repeat: Infinity, ease: "linear" }} />
         <img
           src="/education-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-40 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:left-[-3rem] lg:right-auto lg:w-[min(23vw,260px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-1rem] xl:w-[min(22vw,280px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-36 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:left-[-4rem] lg:right-auto lg:w-[min(18vw,220px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-2rem] xl:w-[min(16vw,240px)]"
         />
         <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Educación" title="Base académica y aprendizaje constante." copy="Formación universitaria en curso, fortalecida con rutas técnicas y proyectos web." icon={BookOpen} />
@@ -468,7 +468,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="certificaciones" className="relative overflow-hidden bg-[#99b4aa] px-5 pb-40 pt-20 sm:px-8 lg:py-20">
+      <section id="certificaciones" className="relative overflow-hidden bg-[#99b4aa] px-5 py-20 sm:px-8">
         <div className="absolute inset-x-0 top-0 h-6 bg-[linear-gradient(90deg,#1f2428_0_20%,#cf7d65_20%_40%,#e1b8a2_40%_60%,#aba66f_60%_80%,#99b4aa_80%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_24%,rgba(242,222,199,.44),transparent_20rem),radial-gradient(circle_at_86%_18%,rgba(207,125,101,.18),transparent_22rem),radial-gradient(circle_at_74%_84%,rgba(171,166,111,.26),transparent_24rem)]" />
         <div className="absolute inset-0 opacity-[0.18] [background-image:linear-gradient(90deg,rgba(31,36,40,.09)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.08)_1px,transparent_1px)] [background-size:58px_58px]" />
@@ -476,7 +476,7 @@ export default function Home() {
           src="/certifications-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-40 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:right-[-2rem] lg:w-[min(22vw,230px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-2 xl:w-[min(20vw,260px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-36 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:right-[-3rem] lg:w-[min(17vw,200px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-[-1rem] xl:w-[min(16vw,220px)]"
         />
         <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Certificaciones" title="Formación complementaria verificada desde tu hoja de vida." copy="Certificados y rutas técnicas alineadas con desarrollo web, bases de datos, APIs y producto digital." icon={Award} />
@@ -529,7 +529,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="logros" className="relative overflow-hidden bg-[#cf7d65] px-5 pb-44 pt-12 sm:px-8 lg:py-14">
+      <section id="logros" className="relative overflow-hidden bg-[#cf7d65] px-5 py-16 sm:px-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_20%,rgba(242,222,199,.34),transparent_22rem),radial-gradient(circle_at_84%_18%,rgba(153,180,170,.22),transparent_24rem),linear-gradient(180deg,rgba(207,125,101,.2),rgba(225,184,162,.28))]" />
         <div className="absolute inset-0 opacity-[0.16] [background-image:linear-gradient(90deg,rgba(31,36,40,.08)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.07)_1px,transparent_1px)] [background-size:58px_58px]" />
         <motion.div className="absolute left-1/2 top-6 h-24 w-[70vw] -translate-x-1/2 -rotate-2 bg-[#e1b8a2]/30" animate={{ x: [-20, 20, -20] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} />
@@ -557,7 +557,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="timeline" className="relative overflow-hidden bg-[#f2dec7] px-5 pb-44 pt-24 sm:px-8 lg:py-24">
+      <section id="timeline" className="relative overflow-hidden bg-[#f2dec7] px-5 py-24 sm:px-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(153,180,170,.28),transparent_22rem),radial-gradient(circle_at_88%_16%,rgba(207,125,101,.18),transparent_20rem),radial-gradient(circle_at_70%_86%,rgba(171,166,111,.22),transparent_24rem)]" />
         <div className="absolute inset-0 opacity-[0.2] [background-image:linear-gradient(90deg,rgba(31,36,40,.075)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.065)_1px,transparent_1px)] [background-size:62px_62px]" />
         <div className="absolute inset-x-0 bottom-0 h-4 bg-[linear-gradient(90deg,#99b4aa,#6b6d43,#aba66f,#cf7d65,#e1b8a2)]" />
