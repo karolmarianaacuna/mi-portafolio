@@ -38,8 +38,8 @@ export function SectionTitle({
       <p className={`mb-5 inline-flex rotate-[-2deg] items-center gap-2 px-4 py-2 text-sm font-black uppercase shadow-[5px_5px_0_#151515] ${dark ? "bg-[#cf7d65] text-white" : "bg-[#f2dec7] text-[#151515]"}`}>
         <Icon className="h-4 w-4" /> {kicker}
       </p>
-      <h2 className={`max-w-5xl text-5xl font-black leading-[0.9] tracking-[-0.06em] sm:text-7xl ${dark ? "text-white" : "text-[#151515]"}`}>{title}</h2>
-      {copy ? <p className={`mt-6 max-w-3xl text-xl leading-8 ${dark ? "text-white/70" : "text-black/64"}`}>{copy}</p> : null}
+      <h2 className={`max-w-5xl text-4xl font-black leading-[0.94] tracking-[-0.05em] sm:text-5xl lg:text-6xl ${dark ? "text-white" : "text-[#151515]"}`}>{title}</h2>
+      {copy ? <p className={`mt-5 max-w-3xl text-base leading-7 sm:text-lg sm:leading-8 ${dark ? "text-white/70" : "text-black/64"}`}>{copy}</p> : null}
     </Reveal>
   );
 }

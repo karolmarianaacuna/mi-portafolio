@@ -120,7 +120,7 @@ export default function Home() {
           className="pointer-events-none fixed right-[-7rem] top-28 z-10 h-72 w-72 rounded-full bg-[#99b4aa]/35 blur-3xl"
           style={{ y: blobY, rotate: blobRotate }}
         />
-        <nav className="relative z-50 mx-auto flex max-w-[1500px] items-center justify-between pt-3 sm:pt-4" style={{ maxWidth: 1500 }}>
+        <nav className="relative z-50 mx-auto flex max-w-[1180px] items-center justify-between pt-3 sm:pt-4">
           <a href="#inicio" className="text-2xl font-black tracking-[-0.06em] sm:text-3xl">
             Mariana<span className="text-[#cf7d65]">.</span>
           </a>
@@ -150,13 +150,13 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-110px)] max-w-[1500px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-145px)] lg:grid-cols-[0.94fr_1.06fr] lg:items-center lg:pt-0" style={{ maxWidth: 1500 }}>
+        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-110px)] max-w-[1180px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-145px)] lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:pt-0">
           <div className="relative z-30 pb-2 sm:pb-6 lg:pb-8">
             <motion.p
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-3 flex max-w-md items-start gap-3 text-left text-sm font-bold leading-6 text-[#111518] sm:mb-4 sm:gap-5 sm:text-base sm:leading-7 xl:text-lg"
+              className="mb-3 flex max-w-md items-start gap-3 text-left text-sm font-bold leading-6 text-[#111518] sm:mb-4 sm:gap-5 sm:text-base sm:leading-7"
             >
               <Code2 className="mt-1 h-5 w-5 shrink-0 sm:h-6 sm:w-6" />
               <span>
@@ -172,7 +172,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               style={{ y: heroTitleY }}
               transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
-              className="relative z-30 text-[13vw] font-black uppercase leading-[0.84] tracking-[-0.055em] text-[#111518] drop-shadow-[0_5px_0_rgba(153,180,170,.58)] sm:text-[3.9rem] sm:tracking-[-0.075em] md:text-[4.7rem] lg:text-[5.5rem] xl:text-[6.8rem] 2xl:text-[7.4rem]"
+              className="relative z-30 text-[13vw] font-black uppercase leading-[0.86] tracking-[-0.055em] text-[#111518] drop-shadow-[0_5px_0_rgba(153,180,170,.58)] sm:text-[3.6rem] sm:tracking-[-0.065em] md:text-[4.25rem] lg:text-[4.9rem] xl:text-[5.25rem]"
             >
               Fullstack
               <span className="relative z-10 block text-transparent opacity-95 [-webkit-text-stroke:1.6px_rgba(17,21,24,.72)] drop-shadow-[0_5px_0_rgba(207,125,101,.55)]">Developer</span>
@@ -184,7 +184,7 @@ export default function Home() {
               transition={{ duration: 0.75, delay: 0.18 }}
               className="mt-3 flex max-w-xl gap-4 border-l-2 border-[#cf7d65] pl-4 text-left sm:mt-4 sm:gap-5 sm:pl-5"
             >
-              <p className="text-sm font-bold leading-6 text-black/78 sm:text-base sm:leading-7 xl:text-lg xl:leading-8">
+              <p className="text-sm font-bold leading-6 text-black/78 sm:text-base sm:leading-7">
                 Desarrollo aplicaciones escalables, experiencias intuitivas y soluciones con impacto, profundizando en UI/UX, manejo de datos y Machine Learning.
               </p>
             </motion.div>
@@ -204,17 +204,17 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="relative mx-auto grid min-h-[clamp(340px,48svh,450px)] w-full max-w-[460px] items-end justify-items-center overflow-hidden sm:min-h-[510px] sm:max-w-[620px] lg:min-h-[700px] lg:max-w-none lg:overflow-visible xl:min-h-[760px]">
+          <div className="relative mx-auto grid min-h-[clamp(340px,48svh,450px)] w-full max-w-[460px] items-end justify-items-center overflow-hidden sm:min-h-[500px] sm:max-w-[590px] lg:min-h-[620px] lg:max-w-none lg:overflow-visible xl:min-h-[660px]">
             <motion.div
-              className="absolute bottom-[-5rem] left-[calc(50%-170px)] z-10 h-[340px] w-[340px] rounded-full bg-[#99b4aa]/70 shadow-[0_34px_90px_rgba(107,109,67,.18)] sm:bottom-[-3rem] sm:left-[calc(50%-245px)] sm:h-[490px] sm:w-[490px] lg:bottom-2 lg:left-auto lg:right-8 lg:h-[600px] lg:w-[600px] xl:right-10 xl:h-[680px] xl:w-[680px] 2xl:h-[720px] 2xl:w-[720px]"
+              className="absolute bottom-[-5rem] left-[calc(50%-170px)] z-10 h-[340px] w-[340px] rounded-full bg-[#99b4aa]/70 shadow-[0_34px_90px_rgba(107,109,67,.18)] sm:bottom-[-3rem] sm:left-[calc(50%-235px)] sm:h-[470px] sm:w-[470px] lg:bottom-2 lg:left-auto lg:right-8 lg:h-[520px] lg:w-[520px] xl:right-6 xl:h-[560px] xl:w-[560px]"
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             />
-            <div className="pointer-events-none absolute right-[1rem] top-0 z-20 hidden origin-top-right scale-x-[0.82] scale-y-[1.22] text-[8.3rem] font-black uppercase leading-none tracking-[-0.08em] text-transparent opacity-34 [-webkit-text-stroke:1px_rgba(17,21,24,.34)] lg:block xl:text-[11.6rem]">
+            <div className="pointer-events-none absolute right-[1rem] top-0 z-20 hidden origin-top-right scale-x-[0.82] scale-y-[1.18] text-[7.2rem] font-black uppercase leading-none tracking-[-0.08em] text-transparent opacity-34 [-webkit-text-stroke:1px_rgba(17,21,24,.34)] lg:block xl:text-[8.7rem]">
               Mariana
             </div>
             <motion.div
-              className="relative z-30 w-[min(86vw,370px)] sm:w-[min(72vw,470px)] lg:absolute lg:bottom-[-5.5rem] lg:left-auto lg:right-[27%] lg:w-[min(44vw,440px)] xl:bottom-[-6rem] xl:right-[29%] xl:w-[min(40vw,480px)] 2xl:w-[500px]"
+              className="relative z-30 w-[min(86vw,370px)] sm:w-[min(72vw,450px)] lg:absolute lg:bottom-[-4.5rem] lg:left-auto lg:right-[25%] lg:w-[min(38vw,395px)] xl:bottom-[-5rem] xl:right-[27%] xl:w-[min(32vw,410px)]"
               initial={{ opacity: 0, y: 70, scale: 0.96 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               style={{ y: heroPhotoY }}
@@ -225,11 +225,11 @@ export default function Home() {
                 alt="Retrato de Karol Mariana Acuña"
                 fetchPriority="high"
                 decoding="async"
-                className="relative mx-auto block h-auto max-h-[400px] w-full max-w-full object-contain object-bottom saturate-125 contrast-105 sm:max-h-[520px] lg:h-[610px] lg:max-h-none xl:h-[680px] 2xl:h-[710px]"
+                className="relative mx-auto block h-auto max-h-[400px] w-full max-w-full object-contain object-bottom saturate-125 contrast-105 sm:max-h-[500px] lg:h-[540px] lg:max-h-none xl:h-[590px]"
               />
             </motion.div>
             <motion.div
-              className="absolute right-[-0.5rem] top-[34%] z-40 hidden w-[238px] rotate-[5deg] rounded-2xl border border-white/80 bg-white/92 px-5 pb-5 pt-7 text-left font-mono text-[11px] leading-6 text-[#111518] shadow-[0_26px_80px_rgba(31,36,40,.16)] backdrop-blur-sm md:block xl:right-0 xl:w-[270px] xl:text-xs xl:leading-7"
+              className="absolute right-[-0.5rem] top-[34%] z-40 hidden w-[220px] rotate-[5deg] rounded-2xl border border-white/80 bg-white/92 px-5 pb-5 pt-7 text-left font-mono text-[11px] leading-6 text-[#111518] shadow-[0_26px_80px_rgba(31,36,40,.16)] backdrop-blur-sm md:block xl:right-0 xl:w-[245px]"
               style={{ y: heroCodeY }}
               initial={{ opacity: 0, x: 26 }}
               animate={{ opacity: 1, x: 0 }}
@@ -246,7 +246,7 @@ export default function Home() {
               <p className="pl-5">goal: <span className="text-[#6b6d43]">{"'create impact'"}</span></p>
               <p>{"}"}</p>
             </motion.div>
-            <div className="absolute bottom-20 right-0 z-40 hidden max-w-56 items-start gap-3 text-left md:flex xl:right-16">
+            <div className="absolute bottom-14 right-0 z-40 hidden max-w-56 items-start gap-3 text-left md:flex xl:right-10">
               <MapPin className="mt-1 h-6 w-6" />
               <p className="text-sm font-black uppercase leading-6 tracking-[0.12em]">
                 Colombia
@@ -290,14 +290,14 @@ export default function Home() {
           aria-hidden="true"
           width={1092}
           height={1092}
-          sizes="(min-width: 1280px) 500px, (min-width: 1024px) 390px, 208px"
+          sizes="(min-width: 1280px) 360px, (min-width: 1024px) 320px, 208px"
           loading="lazy"
-          className="pointer-events-none absolute bottom-0 right-[-0.75rem] z-30 h-auto w-44 select-none opacity-100 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-52 lg:right-[-2.5rem] lg:w-[min(32vw,390px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.24)] xl:right-[-1rem] xl:w-[min(34vw,500px)]"
+          className="pointer-events-none absolute bottom-0 right-[-0.75rem] z-0 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.2)] sm:w-52 lg:right-[-2.5rem] lg:w-[min(26vw,320px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.24)] xl:right-[-1rem] xl:w-[min(25vw,360px)]"
         />
         <div className="pointer-events-none absolute bottom-0 right-0 z-10 hidden h-40 w-[38rem] rounded-tl-full bg-[#99b4aa]/35 lg:block" />
-        <div className="relative z-10 mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
+        <div className="relative z-10 mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <Reveal>
-            <div className="relative mx-auto max-w-[520px]">
+            <div className="relative mx-auto max-w-[460px]">
               <div className="absolute -left-4 -top-4 z-10 rounded-md bg-[#cf7d65] px-4 py-2 text-xl font-black uppercase text-white shadow-[5px_5px_0_#1f2428]">Hello.</div>
               <div className="rounded-xl border-2 border-[#1f2428] bg-[#f2dec7] p-3 shadow-[10px_10px_0_#1f2428]">
                 <Image
@@ -305,7 +305,7 @@ export default function Home() {
                   alt="Ilustración de Mariana trabajando"
                   width={1536}
                   height={2048}
-                  sizes="(min-width: 1024px) 520px, 100vw"
+                  sizes="(min-width: 1024px) 460px, 100vw"
                   loading="lazy"
                   className="aspect-[4/5] w-full rounded-lg object-cover saturate-110"
                 />
@@ -316,10 +316,10 @@ export default function Home() {
             <p className="mb-5 inline-block rounded-full border-2 border-[#1f2428] bg-[#f2dec7] px-4 py-2 text-sm font-black uppercase text-[#1f2428] shadow-[4px_4px_0_#1f2428]">
               Tunja / remoto
             </p>
-            <h2 className="max-w-4xl text-5xl font-black leading-[0.9] tracking-[-0.06em] text-[#1f2428] sm:text-7xl">
+            <h2 className="max-w-4xl text-4xl font-black leading-[0.94] tracking-[-0.055em] text-[#1f2428] sm:text-5xl lg:text-6xl">
               Desarrollo de software con una mirada limpia, práctica y visual.
             </h2>
-            <p className="mt-6 max-w-3xl text-xl leading-9 text-[#1f2428]/72">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#1f2428]/72">
               Me gusta crear interfaces claras, conectar servicios, ordenar información y convertir ideas en productos digitales útiles. Este portafolio evita publicar proyectos incompletos y se centra en mi perfil, mi stack y mi forma de trabajar.
             </p>
             <div className="mt-8 grid max-w-3xl gap-4 pr-0 sm:grid-cols-3 xl:max-w-[760px] xl:pr-0">
@@ -327,14 +327,14 @@ export default function Home() {
                 <motion.article
                   key={title}
                   whileHover={{ y: -8, rotate: i - 1 }}
-                  className="min-h-[268px] rounded-lg border border-[#1f2428] bg-[#fffaf2] p-5 text-[#151515] shadow-[6px_6px_0_#1f2428]"
+                  className="min-h-[238px] rounded-lg border border-[#1f2428] bg-[#fffaf2] p-5 text-[#151515] shadow-[6px_6px_0_#1f2428]"
                 >
                   <span className="grid h-12 w-12 place-items-center rounded-md border border-[#151515]/25 shadow-sm" style={{ backgroundColor: color }}>
                     <Sparkles className="h-6 w-6" />
 
                   </span>
-                  <h3 className="mt-6 text-2xl font-black leading-tight tracking-[-0.04em]">{title}</h3>
-                  <p className="mt-3 max-w-[13rem] text-base leading-7 text-black/68">{copy}</p>
+                  <h3 className="mt-5 text-xl font-black leading-tight tracking-[-0.04em]">{title}</h3>
+                  <p className="mt-3 max-w-[13rem] text-sm leading-6 text-black/68">{copy}</p>
                 </motion.article>
               ))}
             </div>
@@ -350,17 +350,17 @@ export default function Home() {
           src="/stack-peek.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-30 h-auto w-44 select-none opacity-100 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-52 lg:right-[-5rem] lg:z-[1] lg:w-[min(34vw,390px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-[-3rem] xl:w-[min(36vw,520px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-44 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-52 lg:right-[-4rem] lg:w-[min(26vw,320px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-[-2rem] xl:w-[min(24vw,340px)]"
         />
-        <div className="relative mx-auto max-w-7xl">
+        <div className="relative mx-auto max-w-[1180px]">
           <Reveal className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
               <p className="mb-5 inline-flex rotate-[-2deg] items-center gap-2 bg-[#f2dec7] px-4 py-2 text-sm font-black uppercase text-[#1f2428] shadow-[5px_5px_0_#1f2428]">
                 <Code2 className="h-4 w-4" /> Tecnologías
               </p>
-              <h2 className="text-5xl font-black leading-[0.9] tracking-[-0.06em] text-[#1f2428] sm:text-7xl">Stack & skills</h2>
+              <h2 className="text-4xl font-black leading-[0.94] tracking-[-0.05em] text-[#1f2428] sm:text-5xl lg:text-6xl">Stack & skills</h2>
             </div>
-            <p className="max-w-2xl text-xl leading-8 text-[#1f2428]/70">
+            <p className="max-w-2xl text-base leading-7 text-[#1f2428]/70 sm:text-lg sm:leading-8">
               Herramientas que uso para construir productos web completos: interfaces, backend, bases de datos, ORM, control de versiones y flujos ágiles.
             </p>
           </Reveal>
@@ -397,9 +397,9 @@ export default function Home() {
           src="/projects-left-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-30 h-auto w-40 select-none opacity-100 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:left-[-5rem] lg:right-auto lg:z-[1] lg:w-[min(30vw,360px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-2rem] xl:w-[min(26vw,350px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-40 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:left-[-4rem] lg:right-auto lg:w-[min(24vw,280px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-2rem] xl:w-[min(22vw,300px)]"
         />
-        <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Proyectos destacados" title="Proyectos universitarios realizados." copy="Algunos trabajos académicos desarrollados durante mi formación, presentados en video para mostrar su funcionamiento, interfaz y proceso." icon={Sparkles} />
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {featuredAreas.map(([id, title, copy, href, color], index) => (
@@ -410,7 +410,7 @@ export default function Home() {
                   rel="noreferrer"
                   whileHover={{ y: -10, rotate: index % 2 ? 1.5 : -1.5, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative block min-h-[292px] overflow-hidden rounded-xl border-2 border-[#151515] bg-white/95 p-6 text-[#151515] shadow-[7px_7px_0_#151515,0_24px_42px_rgba(31,36,40,.16)] backdrop-blur-sm"
+                  className="group relative block min-h-[250px] overflow-hidden rounded-xl border-2 border-[#151515] bg-white/95 p-5 text-[#151515] shadow-[7px_7px_0_#151515,0_24px_42px_rgba(31,36,40,.16)] backdrop-blur-sm"
                 >
                   <span className="absolute inset-x-0 top-0 h-20 bg-[linear-gradient(180deg,rgba(242,222,199,.55),transparent)]" />
                   <span className="absolute -bottom-12 -right-10 h-36 w-36 rounded-full opacity-75 blur-[1px] transition group-hover:scale-110" style={{ backgroundColor: color }} />
@@ -422,8 +422,8 @@ export default function Home() {
                   <span className="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full border-2 border-[#151515] bg-[#f2dec7] shadow-[3px_3px_0_#151515,0_10px_18px_rgba(207,125,101,.18)] transition group-hover:-translate-y-1 group-hover:translate-x-1">
                     <Play className="h-5 w-5 fill-[#151515]" />
                   </span>
-                  <div className="relative mt-20 flex min-h-0 flex-col">
-                    <h3 className="text-2xl font-black leading-tight tracking-[-0.04em]">{title}</h3>
+                  <div className="relative mt-14 flex min-h-0 flex-col">
+                    <h3 className="text-xl font-black leading-tight tracking-[-0.04em]">{title}</h3>
                     <p className="mt-3 text-sm leading-6 text-black/62">{copy}</p>
                     <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-md border-2 border-[#151515] bg-[#151515] px-3 py-2 text-xs font-black uppercase text-white transition group-hover:bg-[#cf7d65] group-hover:text-[#151515]">
                       Ver demo <ArrowUpRight className="h-4 w-4" />
@@ -442,9 +442,9 @@ export default function Home() {
           src="/experience-areas-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-1 z-30 h-auto w-52 select-none opacity-100 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-60 lg:right-[-6rem] lg:z-[1] lg:w-[min(34vw,420px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-[-4rem] xl:w-[min(34vw,480px)]"
+          className="pointer-events-none absolute bottom-0 right-1 z-[1] h-auto w-48 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-56 lg:right-[-4rem] lg:w-[min(25vw,320px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-[-2rem] xl:w-[min(24vw,340px)]"
         />
-        <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Experiencia" title="Áreas donde ya puedo aportar." copy="Perfil junior full stack con práctica en interfaces, APIs, datos y colaboración ágil." icon={BriefcaseBusiness} />
           <div className="grid gap-5 md:grid-cols-3">
             {experience.map((item, index) => <Reveal key={item[0]} delay={index * 0.06}><ExperienceCard item={item} index={index} /></Reveal>)}
@@ -458,9 +458,9 @@ export default function Home() {
           src="/education-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-30 h-auto w-40 select-none opacity-100 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:left-[-4rem] lg:right-auto lg:z-[1] lg:w-[min(30vw,300px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-2rem] xl:w-[min(32vw,410px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-40 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:left-[-3rem] lg:right-auto lg:w-[min(23vw,260px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-1rem] xl:w-[min(22vw,280px)]"
         />
-        <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Educación" title="Base académica y aprendizaje constante." copy="Formación universitaria en curso, fortalecida con rutas técnicas y proyectos web." icon={BookOpen} />
           <div className="grid gap-4 md:grid-cols-2">
             {education.map((item, index) => <Reveal key={item[0]} delay={index * 0.06}><InfoCard item={item} index={index} /></Reveal>)}
@@ -476,9 +476,9 @@ export default function Home() {
           src="/certifications-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-30 h-auto w-40 select-none opacity-100 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:right-[-3rem] lg:z-[1] lg:w-[min(26vw,260px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-2 xl:w-[min(28vw,340px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-[1] h-auto w-40 select-none opacity-90 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:right-[-2rem] lg:w-[min(22vw,230px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-2 xl:w-[min(20vw,260px)]"
         />
-        <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="relative z-10 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Certificaciones" title="Formación complementaria verificada desde tu hoja de vida." copy="Certificados y rutas técnicas alineadas con desarrollo web, bases de datos, APIs y producto digital." icon={Award} />
           <div className="grid gap-5 md:grid-cols-3">
             {certifications.map(([title, copy], index) => {
@@ -542,7 +542,7 @@ export default function Home() {
         <div className="pointer-events-none absolute left-[5rem] top-20 hidden h-24 w-64 bg-[#e1b8a2]/22 lg:block" />
         <div className="pointer-events-none absolute right-[32%] top-20 hidden text-4xl font-black text-[#f2dec7]/65 drop-shadow-[0_8px_18px_rgba(31,36,40,.12)] lg:block">✦</div>
         <div className="pointer-events-none absolute right-[18%] top-36 hidden text-2xl font-black text-[#99b4aa]/80 lg:block">✧</div>
-        <div className="relative z-20 mx-auto max-w-7xl lg:pl-[24rem] xl:pl-[31rem]">
+        <div className="relative z-20 mx-auto max-w-[1180px] lg:pl-[18rem] xl:pl-[22rem]">
           <SectionTitle kicker="Logros y estadísticas" title="Números simples para leer rápido tu perfil." copy="Indicadores visuales, fáciles de actualizar cuando tengas métricas más concretas." icon={ChartNoAxesColumnIncreasing} />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map(([value, label], index) => (
@@ -563,7 +563,7 @@ export default function Home() {
         <div className="absolute inset-x-0 bottom-0 h-4 bg-[linear-gradient(90deg,#99b4aa,#6b6d43,#aba66f,#cf7d65,#e1b8a2)]" />
         <div className="pointer-events-none absolute left-[10%] top-24 hidden text-4xl font-black text-[#99b4aa] lg:block">✦</div>
         <div className="pointer-events-none absolute right-[24%] top-36 hidden text-2xl font-black text-[#cf7d65] lg:block">✧</div>
-        <div className="relative z-20 mx-auto max-w-7xl">
+        <div className="relative z-20 mx-auto max-w-[1180px]">
           <SectionTitle kicker="Timeline profesional" title="Una ruta de crecimiento clara." copy="Un recorrido breve para ubicar tu proceso sin llenar la página de texto." icon={Trophy} />
           <div className="relative mt-12">
             <div className="absolute left-6 top-0 h-full w-1 rounded-full bg-[#151515] md:left-0 md:right-0 md:top-[4.75rem] md:mx-auto md:h-1 md:w-[calc(100%-7rem)]" />
@@ -583,7 +583,7 @@ export default function Home() {
                       </span>
                       <span className="absolute -bottom-10 -right-8 h-28 w-28 rounded-full opacity-55 transition group-hover:scale-110" style={{ backgroundColor: colors[index] }} />
                       <span className="absolute right-6 top-6 text-2xl font-black text-[#151515]/10 transition group-hover:rotate-12 group-hover:text-[#151515]/20">✦</span>
-                      <p className="relative text-5xl font-black tracking-[-0.06em] text-[#aba66f] [-webkit-text-stroke:1.2px_#151515]">{year}</p>
+                      <p className="relative text-4xl font-black tracking-[-0.05em] text-[#aba66f] [-webkit-text-stroke:1.2px_#151515]">{year}</p>
                       <p className="relative mt-5 leading-7 text-black/64">{copy}</p>
                       <span className="relative mt-6 inline-flex rounded-full border border-[#151515]/20 px-3 py-1 text-xs font-black uppercase text-[#151515]/55">
                         Paso 0{index + 1}
@@ -599,7 +599,7 @@ export default function Home() {
 
       <section id="contacto" className="relative overflow-hidden bg-[#99b4aa] px-5 py-20 text-[#1f2428] sm:px-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(171,166,111,.4),transparent_23rem),radial-gradient(circle_at_88%_18%,rgba(207,125,101,.22),transparent_24rem)]" />
-        <Reveal className="relative z-10 mx-auto max-w-7xl">
+        <Reveal className="relative z-10 mx-auto max-w-[1180px]">
           <div className="relative overflow-hidden rounded-xl border-2 border-[#1f2428] bg-[#f2dec7] p-8 shadow-[10px_10px_0_#6b6d43] sm:p-12">
             <div className="absolute -right-14 -top-14 h-48 w-48 rounded-full bg-[#cf7d65]/70" />
             <div className="relative grid gap-8 lg:grid-cols-[1fr_0.8fr]">
@@ -607,7 +607,7 @@ export default function Home() {
                 <p className="inline-flex items-center gap-2 rounded-full border-2 border-[#1f2428] bg-[#aba66f] px-4 py-2 font-black text-[#151515]">
                   <MapPin className="h-4 w-4" /> Prácticas profesionales
                 </p>
-                <h2 className="mt-6 max-w-3xl text-5xl font-black leading-[0.9] tracking-[-0.06em] sm:text-7xl">
+                <h2 className="mt-6 max-w-3xl text-4xl font-black leading-[0.94] tracking-[-0.05em] sm:text-5xl lg:text-6xl">
                   Conectemos por GitHub, LinkedIn o correo.
                 </h2>
               </div>
@@ -638,13 +638,13 @@ export default function Home() {
         <div className="absolute inset-0 opacity-[0.12] [background-image:linear-gradient(90deg,rgba(255,255,255,.14)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.12)_1px,transparent_1px)] [background-size:54px_54px]" />
         <div className="absolute -right-20 top-[-5rem] h-64 w-64 rounded-full bg-[#99b4aa]/20 blur-2xl" />
         <div className="absolute -left-16 bottom-[-5rem] h-56 w-56 rounded-full bg-[#cf7d65]/18 blur-2xl" />
-        <div className="relative mx-auto max-w-7xl">
+        <div className="relative mx-auto max-w-[1180px]">
           <div className="mb-8 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
               <p className="mb-4 inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.12em] text-white">
                 <Code2 className="h-4 w-4" /> Consola
               </p>
-              <h2 className="max-w-xl text-4xl font-black leading-[0.9] tracking-[-0.05em] text-white sm:text-6xl">
+              <h2 className="max-w-xl text-3xl font-black leading-[0.94] tracking-[-0.04em] text-white sm:text-5xl">
                 Navega el portafolio desde la terminal.
               </h2>
             </div>

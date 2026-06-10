@@ -16,9 +16,9 @@ export function CurrentBuilds() {
         src="/section-character.webp"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 right-[-2.5rem] z-0 hidden w-[180px] select-none rotate-[-3deg] drop-shadow-[0_24px_42px_rgba(31,36,40,.16)] lg:block xl:w-[230px]"
+        className="pointer-events-none absolute bottom-0 right-[-2rem] z-0 hidden w-[150px] select-none rotate-[-3deg] drop-shadow-[0_24px_42px_rgba(31,36,40,.16)] lg:block xl:w-[180px]"
       />
-      <div className="relative mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+      <div className="relative mx-auto grid max-w-[1180px] gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <Reveal>
           <div className="h-full rounded-2xl border-2 border-[#1f2428] bg-[#f2dec7] p-6 shadow-[10px_10px_0_#aba66f]">
             <div className="mb-5 flex flex-wrap items-start justify-between gap-4 border-b border-[#1f2428]/15 pb-5">
@@ -27,7 +27,7 @@ export function CurrentBuilds() {
                   <span className="h-3 w-3 rounded-full bg-[#6b6d43] shadow-[0_0_12px_rgba(107,109,67,.55)]" />
                   GitHub live
                 </div>
-                <h2 className="text-4xl font-black leading-[0.9] tracking-[-0.05em] text-[#1f2428] sm:text-6xl">
+                <h2 className="text-4xl font-black leading-[0.94] tracking-[-0.05em] text-[#1f2428] sm:text-5xl">
                   En desarrollo activo.
                 </h2>
               </div>
@@ -80,7 +80,7 @@ export function ActiveBuildPanel() {
             <span className="h-3 w-3 rounded-full bg-[#6b6d43] shadow-[0_0_12px_rgba(107,109,67,.55)]" />
             GitHub live
           </div>
-          <h2 className="text-4xl font-black leading-[0.9] tracking-[-0.05em] text-[#1f2428] sm:text-5xl">
+          <h2 className="text-3xl font-black leading-[0.94] tracking-[-0.05em] text-[#1f2428] sm:text-4xl">
             En desarrollo activo.
           </h2>
         </div>
