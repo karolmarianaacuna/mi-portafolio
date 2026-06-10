@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-235px)] max-w-[1180px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-245px)] lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:pt-0">
+        <div className="relative z-20 mx-auto grid min-h-[calc(100svh-300px)] max-w-[1180px] items-start gap-3 pt-5 sm:gap-4 sm:pt-6 lg:min-h-[calc(100vh-315px)] lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:pt-0">
           <div className="relative z-30 pb-2 sm:pb-6 lg:pb-8">
             <motion.p
               initial={{ opacity: 0, y: 18 }}
@@ -249,7 +249,7 @@ export default function Home() {
           </div>
         </div>
 
-        <a href="#sobre-mi" className="relative z-40 mx-auto -mt-3 mb-2 flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#1f2428] bg-white shadow-[4px_4px_0_#1f2428] sm:h-11 sm:w-11">
+        <a href="#sobre-mi" className="relative z-40 mx-auto -mt-7 mb-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#1f2428] bg-white shadow-[4px_4px_0_#1f2428] sm:h-11 sm:w-11">
           <ArrowDown className="h-5 w-5" />
         </a>
         <TechMarquee />
@@ -341,9 +341,9 @@ export default function Home() {
           src="/stack-peek.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-40 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:right-[-5rem] lg:w-[min(20vw,240px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-[-3rem] xl:w-[min(18vw,260px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-20 h-auto w-40 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-48 lg:right-[-3rem] lg:w-[min(22vw,260px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:right-[-1rem] xl:w-[min(20vw,300px)]"
         />
-        <div className="relative mx-auto max-w-[1180px]">
+        <div className="relative z-30 mx-auto max-w-[1180px] lg:pr-[15rem]">
           <Reveal className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
               <p className="mb-5 inline-flex rotate-[-2deg] items-center gap-2 bg-[#f2dec7] px-4 py-2 text-sm font-black uppercase text-[#1f2428] shadow-[5px_5px_0_#1f2428]">
@@ -388,9 +388,9 @@ export default function Home() {
           src="/projects-left-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-36 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:left-[-5rem] lg:right-auto lg:w-[min(18vw,220px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-3rem] xl:w-[min(16vw,240px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:left-[-2rem] lg:right-auto lg:w-[min(20vw,250px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-0 xl:w-[min(18vw,280px)]"
         />
-        <div className="relative z-10 mx-auto max-w-[1180px]">
+        <div className="relative z-30 mx-auto max-w-[1180px] lg:pl-[12rem]">
           <SectionTitle kicker="Proyectos destacados" title="Proyectos universitarios realizados." copy="Algunos trabajos académicos desarrollados durante mi formación, presentados en video para mostrar su funcionamiento, interfaz y proceso." icon={Sparkles} />
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {featuredAreas.map(([id, title, copy, href, color], index) => (
@@ -433,9 +433,9 @@ export default function Home() {
           src="/experience-areas-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-1 z-0 h-auto w-44 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-52 lg:right-[-5rem] lg:w-[min(20vw,240px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-[-3rem] xl:w-[min(18vw,260px)]"
+          className="pointer-events-none absolute bottom-0 right-1 z-20 h-auto w-44 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-52 lg:right-[-3rem] lg:w-[min(22vw,280px)] lg:drop-shadow-[0_28px_48px_rgba(31,36,40,.18)] xl:right-[-1rem] xl:w-[min(20vw,320px)]"
         />
-        <div className="relative z-10 mx-auto max-w-[1180px]">
+        <div className="relative z-30 mx-auto max-w-[1180px] lg:pr-[14rem]">
           <SectionTitle kicker="Experiencia" title="Áreas donde ya puedo aportar." copy="Perfil junior full stack con práctica en interfaces, APIs, datos y colaboración ágil." icon={BriefcaseBusiness} />
           <div className="grid gap-5 md:grid-cols-3">
             {experience.map((item, index) => <Reveal key={item[0]} delay={index * 0.06}><ExperienceCard item={item} index={index} /></Reveal>)}
@@ -449,9 +449,9 @@ export default function Home() {
           src="/education-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-36 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:left-[-4rem] lg:right-auto lg:w-[min(18vw,220px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-[-2rem] xl:w-[min(16vw,240px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:left-[-2rem] lg:right-auto lg:w-[min(20vw,250px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-0 xl:w-[min(18vw,280px)]"
         />
-        <div className="relative z-10 mx-auto max-w-[1180px]">
+        <div className="relative z-30 mx-auto max-w-[1180px] lg:pl-[12rem]">
           <SectionTitle kicker="Educación" title="Base académica y aprendizaje constante." copy="Formación universitaria en curso, fortalecida con rutas técnicas y proyectos web." icon={BookOpen} />
           <div className="grid gap-4 md:grid-cols-2">
             {education.map((item, index) => <Reveal key={item[0]} delay={index * 0.06}><InfoCard item={item} index={index} /></Reveal>)}
@@ -467,9 +467,9 @@ export default function Home() {
           src="/certifications-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 right-2 z-0 h-auto w-36 select-none opacity-35 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:right-[-3rem] lg:w-[min(17vw,200px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-[-1rem] xl:w-[min(16vw,220px)]"
+          className="pointer-events-none absolute bottom-0 right-2 z-20 h-auto w-36 select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] sm:w-44 lg:right-[-2rem] lg:w-[min(19vw,230px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.2)] xl:right-0 xl:w-[min(18vw,260px)]"
         />
-        <div className="relative z-10 mx-auto max-w-[1180px]">
+        <div className="relative z-30 mx-auto max-w-[1180px] lg:pr-[13rem]">
           <SectionTitle kicker="Certificaciones" title="Formación complementaria verificada desde tu hoja de vida." copy="Certificados y rutas técnicas alineadas con desarrollo web, bases de datos, APIs y producto digital." icon={Award} />
           <div className="grid gap-5 md:grid-cols-3">
             {certifications.map(([title, copy], index) => {
@@ -533,7 +533,7 @@ export default function Home() {
         <div className="pointer-events-none absolute left-[5rem] top-20 hidden h-24 w-64 bg-[#e1b8a2]/22 lg:block" />
         <div className="pointer-events-none absolute right-[32%] top-20 hidden text-4xl font-black text-[#f2dec7]/65 drop-shadow-[0_8px_18px_rgba(31,36,40,.12)] lg:block">✦</div>
         <div className="pointer-events-none absolute right-[18%] top-36 hidden text-2xl font-black text-[#99b4aa]/80 lg:block">✧</div>
-        <div className="relative z-20 mx-auto max-w-[1180px] lg:pl-[18rem] xl:pl-[22rem]">
+        <div className="relative z-20 mx-auto max-w-[980px] text-center">
           <SectionTitle kicker="Logros y estadísticas" title="Números simples para leer rápido tu perfil." copy="Indicadores visuales, fáciles de actualizar cuando tengas métricas más concretas." icon={ChartNoAxesColumnIncreasing} />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map(([value, label], index) => (
