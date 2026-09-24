@@ -26,6 +26,7 @@ html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
     radial-gradient(circle at 60% 56%, rgba(171, 166, 111, 0.2), transparent 32rem),
     linear-gradient(180deg, #f2dec7 0%, #e9d4bf 48%, #f7eadb 100%);
   color: var(--ink);
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -70,4 +72,27 @@ body {
 
 .text-balance {
   text-wrap: balance;
+}
+
+.projects-rail {
+  scrollbar-color: #151515 rgba(255, 250, 242, 0.58);
+  scrollbar-width: thin;
+}
+
+.projects-rail::-webkit-scrollbar {
+  height: 6px;
+}
+
+.projects-rail::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(255, 250, 242, 0.58);
+}
+
+.projects-rail::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #151515;
+}
+
+.projects-rail::-webkit-scrollbar-thumb:hover {
+  background: #cf7d65;
 }

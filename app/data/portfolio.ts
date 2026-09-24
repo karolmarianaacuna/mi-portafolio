@@ -42,6 +42,8 @@ export const profileCards: ProfileCard[] = [
 ];
 
 export const featuredAreas: UniversityProject[] = [
+  ["05", "Visión computacional retail", "Solución aplicada al sector retail para analizar espacios comerciales mediante visión computacional y apoyar decisiones operativas.", "https://youtu.be/H3SRPKaOQuk", "#99b4aa"],
+  ["06", "Dashboard de ciberseguridad", "Prototipo creado en hackatón de diseño de interfaz para visualizar el estado de ciberseguridad de una empresa.", "https://youtu.be/aTu7-k9h5TQ", "#e1b8a2"],
   ["01", "Proyecto universitario", "Solución académica desarrollada para aplicar análisis, diseño y construcción de software.", "https://www.youtube.com/watch?v=_y-6HTMYmV4", "#99b4aa"],
   ["02", "Chatbot", "Asistente conversacional creado como práctica universitaria, con enfoque en interacción y respuesta al usuario.", "https://www.youtube.com/watch?v=dDtOVmUWOjw", "#6b6d43"],
   ["03", "Aplicación académica", "Proyecto de clase orientado a resolver un caso práctico mediante una experiencia digital funcional.", "https://youtu.be/QQGeBjoyp1I?si=vjtBS4oYCenXZ5an", "#aba66f"],

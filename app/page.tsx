@@ -379,7 +379,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="proyectos" className="relative overflow-hidden bg-[#f2dec7] px-5 py-24 sm:px-8">
+      <section id="proyectos" className="relative overflow-hidden bg-[#f2dec7] px-5 py-14 sm:px-8 sm:py-16">
         <div className="absolute left-0 top-0 h-full w-7 bg-[linear-gradient(#99b4aa,#6b6d43,#aba66f,#cf7d65,#e1b8a2)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_32%,rgba(153,180,170,.22),transparent_18rem),radial-gradient(circle_at_86%_8%,rgba(171,166,111,.2),transparent_24rem),radial-gradient(circle_at_78%_82%,rgba(207,125,101,.16),transparent_22rem),linear-gradient(180deg,rgba(255,250,242,.35),rgba(242,222,199,.12))]" />
         <div className="absolute inset-0 opacity-[0.2] [background-image:linear-gradient(90deg,rgba(31,36,40,.075)_1px,transparent_1px),linear-gradient(rgba(31,36,40,.065)_1px,transparent_1px)] [background-size:64px_64px]" />
@@ -404,47 +404,66 @@ export default function Home() {
           src="/projects-left-decor.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 left-[-1rem] z-20 hidden h-auto select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] lg:block lg:w-[clamp(260px,22vw,380px)] lg:drop-shadow-[0_24px_42px_rgba(31,36,40,.18)] xl:left-2"
+          className="pointer-events-none absolute right-4 top-8 z-40 hidden h-auto w-[clamp(130px,12vw,200px)] select-none opacity-95 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] lg:block xl:right-12"
         />
-        <div className="relative z-30 mx-auto max-w-[1180px] lg:pl-[13rem] xl:pl-[15rem]">
-          <SectionTitle kicker="Proyectos destacados" title="Proyectos universitarios realizados." copy="Algunos trabajos académicos desarrollados durante mi formación, presentados en video para mostrar su funcionamiento, interfaz y proceso." icon={Sparkles} />
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="relative z-30 mx-auto max-w-[1180px]">
+          <Reveal className="mb-8 max-w-[820px] pr-0 lg:max-w-[760px] lg:pr-40 xl:max-w-[840px]">
+            <div>
+              <p className="mb-3 inline-flex rotate-[-1deg] items-center gap-2 border-2 border-[#151515] bg-[#f2dec7] px-3 py-1.5 text-xs font-black uppercase text-[#151515] shadow-[4px_4px_0_#151515]">
+                <Sparkles className="h-3.5 w-3.5" /> Proyectos destacados
+              </p>
+              <h2 className="max-w-3xl text-3xl font-black leading-[0.95] tracking-[-0.035em] text-[#151515] sm:text-4xl lg:text-5xl">
+                Demos recientes y proyectos académicos.
+              </h2>
+            </div>
+            <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-black/66 sm:text-base sm:leading-7">
+              Primero aparecen los trabajos más recientes. Cada tarjeta abre un video con el funcionamiento, la interfaz y el resultado del proyecto.
+            </p>
+          </Reveal>
+          <div className="projects-rail -mx-5 overflow-x-auto overflow-y-hidden overscroll-x-contain px-5 pb-4 pt-2 sm:-mx-8 sm:px-8">
+            <div className="flex snap-x snap-mandatory gap-5">
             {featuredAreas.map(([id, title, copy, href, color], index) => (
-              <Reveal key={id} delay={index * 0.06}>
+              <Reveal key={id} delay={index * 0.06} className="h-full min-w-0 shrink-0 snap-start basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)] xl:basis-[calc((100%-3.75rem)/4)]">
                 <motion.a
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  whileHover={{ y: -10, rotate: index % 2 ? 1.5 : -1.5, scale: 1.02 }}
+                  whileHover={{ y: -6, scale: 1.015 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative block min-h-[250px] overflow-hidden rounded-xl border-2 border-[#151515] bg-white/95 p-5 text-[#151515] shadow-[7px_7px_0_#151515,0_24px_42px_rgba(31,36,40,.16)] backdrop-blur-sm"
+                  className="group relative flex h-full min-h-[236px] min-w-0 flex-col overflow-hidden rounded-lg border-2 border-[#151515] bg-white/95 p-4 text-[#151515] shadow-[5px_5px_0_#151515,0_18px_30px_rgba(31,36,40,.12)] backdrop-blur-sm"
                 >
-                  <span className="absolute inset-x-0 top-0 h-20 bg-[linear-gradient(180deg,rgba(242,222,199,.55),transparent)]" />
-                  <span className="absolute -bottom-12 -right-10 h-36 w-36 rounded-full opacity-75 blur-[1px] transition group-hover:scale-110" style={{ backgroundColor: color }} />
+                  <span className="absolute inset-x-0 top-0 h-12 bg-[linear-gradient(180deg,rgba(242,222,199,.55),transparent)]" />
+                  <span className="absolute -bottom-12 -right-10 h-28 w-28 rounded-full opacity-75 blur-[1px] transition group-hover:scale-110" style={{ backgroundColor: color }} />
                   <span className="absolute -left-10 top-24 h-24 w-28 rounded-[50%_50%_45%_55%] opacity-0 blur-2xl transition group-hover:opacity-35" style={{ backgroundColor: color }} />
-                  <span className="absolute bottom-8 right-10 text-2xl font-black text-[#151515]/10 transition group-hover:rotate-12 group-hover:text-[#151515]/20">✦</span>
-                  <span className="relative mb-8 inline-flex h-12 w-12 items-center justify-center rounded-md border-2 border-[#151515] text-xl font-black" style={{ backgroundColor: color }}>
-                    {id}
+                  <span className="absolute bottom-7 right-9 text-lg font-black text-[#151515]/10 transition group-hover:rotate-12 group-hover:text-[#151515]/20">✦</span>
+                  <div className="relative flex items-start justify-between gap-3 pr-9">
+                    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md border-2 border-[#151515] text-base font-black" style={{ backgroundColor: color }}>
+                      {id}
+                    </span>
+                    <span className="mt-1 inline-flex max-w-[7rem] rounded-full border border-[#151515]/15 bg-white/70 px-2 py-1 text-[0.58rem] font-black uppercase text-[#151515]/55">
+                      {index < 2 ? "Reciente" : "Académico"}
+                    </span>
+                  </div>
+                  <span className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full border-2 border-[#151515] bg-[#f2dec7] shadow-[3px_3px_0_#151515,0_10px_18px_rgba(207,125,101,.18)] transition group-hover:-translate-y-1 group-hover:translate-x-1">
+                    <Play className="h-3.5 w-3.5 fill-[#151515]" />
                   </span>
-                  <span className="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full border-2 border-[#151515] bg-[#f2dec7] shadow-[3px_3px_0_#151515,0_10px_18px_rgba(207,125,101,.18)] transition group-hover:-translate-y-1 group-hover:translate-x-1">
-                    <Play className="h-5 w-5 fill-[#151515]" />
-                  </span>
-                  <div className="relative mt-14 flex min-h-0 flex-col">
-                    <h3 className="text-xl font-black leading-tight tracking-[-0.04em]">{title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-black/62">{copy}</p>
-                    <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-md border-2 border-[#151515] bg-[#151515] px-3 py-2 text-xs font-black uppercase text-white transition group-hover:bg-[#cf7d65] group-hover:text-[#151515]">
-                      Ver demo <ArrowUpRight className="h-4 w-4" />
+                  <div className="relative mt-5 flex min-h-0 flex-1 flex-col">
+                    <h3 className="text-base font-black leading-tight tracking-[-0.025em]">{title}</h3>
+                    <p className="mt-2 overflow-hidden text-[0.78rem] leading-5 text-black/62 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:4]">{copy}</p>
+                    <span className="mt-auto inline-flex w-fit items-center gap-1.5 rounded-md border-2 border-[#151515] bg-[#151515] px-2.5 py-1.5 text-[0.68rem] font-black uppercase text-white transition group-hover:bg-[#cf7d65] group-hover:text-[#151515]">
+                      Ver demo <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
                 </motion.a>
               </Reveal>
             ))}
+            </div>
           </div>
           <img
             src="/projects-left-decor.webp"
             alt=""
             aria-hidden="true"
-            className="relative z-20 mx-auto mt-8 h-auto w-44 select-none drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] lg:hidden"
+            className="pointer-events-none relative z-0 mx-auto mt-4 h-auto w-32 select-none opacity-70 drop-shadow-[0_18px_30px_rgba(31,36,40,.18)] lg:hidden"
           />
         </div>
       </section>
